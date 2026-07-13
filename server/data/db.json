@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "54n8w9a",
+      "_id": "o80uih2",
+      "createdAt": "2026-07-13T13:18:19.588Z",
+      "updatedAt": "2026-07-13T13:18:19.588Z",
+      "name": "Aizaz Ahmad",
+      "email": "aizazexforwardian@gmail.com",
+      "password": "$2a$10$IroLuAVKjJKELc0Kkfc6DuyX.P2ey02m6GaUSZSZhZeCyVSKfHrxO",
+      "role": "Admin",
+      "plan": "Free",
+      "aiUsageLimit": 20,
+      "aiUsageCount": 0
+    }
+  ],
+  "projects": [],
+  "tasks": [],
+  "activities": [
+    {
+      "id": "31hxs2p",
+      "_id": "20xgjo5",
+      "createdAt": "2026-07-13T13:18:19.589Z",
+      "updatedAt": "2026-07-13T13:18:19.589Z",
+      "userId": "54n8w9a",
+      "userName": "Aizaz Ahmad",
+      "action": "Account Created",
+      "details": "Registered a new account on AI Workspace"
+    }
+  ]
+}
