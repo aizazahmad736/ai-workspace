@@ -63,7 +63,7 @@ Ensure you have **Node.js** (v18+) installed.
    ```bash
    cd client
    ```
-3. Run the Vite development server:
+3. Run the Vite development server::
    ```bash
    npm run dev
    ```
