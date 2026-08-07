@@ -2,6 +2,8 @@
 
 AI Workspace is a premium full-stack SaaS Dashboard designed to showcase React, Express, and database integrations. It includes modern charts, an interactive Kanban sprints board, subscription metrics, role management, and 5 interactive AI diagnostic tools.
 
+<img width="949" height="446" alt="Screenshot 2026-07-16 001113" src="https://github.com/user-attachments/assets/e91ae53e-371b-4d3c-8305-566728cc7711" />
+
 ## Key Features:
 
 1. **Authentication**: Form validation, secure sign-ups, and session management using JSON Web Tokens (JWT) & bcrypt.
