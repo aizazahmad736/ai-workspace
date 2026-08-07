@@ -6,6 +6,8 @@ AI Workspace is a premium full-stack SaaS Dashboard designed to showcase React, 
 
 <img width="959" height="413" alt="Screenshot 2026-07-16 001135" src="https://github.com/user-attachments/assets/0da2e830-a383-4c79-8194-6bd227270b5a" />
 
+<img width="953" height="437" alt="Screenshot 2026-07-16 001148" src="https://github.com/user-attachments/assets/1ea8f89e-2597-4b4e-96eb-8e18977a7160" />
+
 ## Key Features:
 
 1. **Authentication**: Form validation, secure sign-ups, and session management using JSON Web Tokens (JWT) & bcrypt.
