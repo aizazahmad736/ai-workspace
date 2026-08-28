@@ -1,5 +1,9 @@
 # AI Workspace - SaaS Dashboard Portfolio Project
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://aizazahmad736.github.io/ai-workspace/)
+
+> 🚀 **Live Application:** [https://aizazahmad736.github.io/ai-workspace/](https://aizazahmad736.github.io/ai-workspace/)
+
 AI Workspace is a premium full-stack SaaS Dashboard designed to showcase React, Express, and database integrations. It includes modern charts, an interactive Kanban sprints board, subscription metrics, role management, and 5 interactive AI diagnostic tools.
 <img width="473" height="250" alt="Screenshot 2026-07-16 001258" src="https://github.com/user-attachments/assets/e183dc5e-e4ad-401b-82a7-c08732dedc27" />
 
