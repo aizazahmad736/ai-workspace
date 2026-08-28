@@ -9,16 +9,26 @@ import projectRoutes from './routes/projectRoutes.js';
 import aiRoutes from './routes/aiRoutes.js';
 import analyticsRoutes from './routes/analyticsRoutes.js';
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: '*',
   credentials: true
 }));
 app.use(express.json());
+
+// Serve built static frontend files if present
+const clientBuildPath = path.join(__dirname, '../client/dist');
+app.use(express.static(clientBuildPath));
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
@@ -26,8 +36,20 @@ app.use('/api/projects', projectRoutes); // Handles both projects and tasks
 app.use('/api/ai', aiRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.json({ message: 'AI Workspace SaaS API is running...' });
+});
+
+// SPA fallback routing
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) {
+    return next();
+  }
+  res.sendFile(path.join(clientBuildPath, 'index.html'), (err) => {
+    if (err) {
+      res.json({ message: 'AI Workspace SaaS API is running...' });
+    }
+  });
 });
 
 // Connect database and run
