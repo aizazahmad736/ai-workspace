@@ -75,6 +75,15 @@ app.get('*', (req, res, next) => {
   });
 });
 
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error('API Error:', err);
+
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || 'Internal Server Error'
+  });
+});
 // Connect database and run
 const PORT = process.env.PORT || 5000;
 
