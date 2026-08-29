@@ -75,6 +75,15 @@ app.get('*', (req, res, next) => {
   });
 });
 
+
+// API 404 handler
+app.use('/api', (req, res) => {
+  res.status(404).json({
+    success: false,
+    message: 'API endpoint not found',
+    path: req.originalUrl
+  });
+}); 
 // Global error handler
 app.use((err, req, res, next) => {
   console.error('API Error:', err);
