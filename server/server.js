@@ -40,6 +40,15 @@ app.get('/api', (req, res) => {
   res.json({ message: 'AI Workspace SaaS API is running...' });
 });
 
+
+// API health check
+app.get('/api/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    message: 'AI Workspace API is healthy',
+    timestamp: new Date().toISOString()
+  });
+}); 
 // SPA fallback routing
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api')) {
