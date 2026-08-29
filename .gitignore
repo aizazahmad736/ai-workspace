@@ -16,3 +16,17 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Local database
+server/data/db.json
