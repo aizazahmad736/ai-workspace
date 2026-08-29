@@ -36,10 +36,24 @@ app.use('/api/projects', projectRoutes); // Handles both projects and tasks
 app.use('/api/ai', aiRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
+// app.get('/api', (req, res) => {
+//   res.json({ message: 'AI Workspace SaaS API is running...' });
+// });
 app.get('/api', (req, res) => {
-  res.json({ message: 'AI Workspace SaaS API is running...' });
+  res.status(200).json({
+    name: 'AI Workspace SaaS API',
+    version: '1.0.0',
+    status: 'running',
+    message: 'Welcome to the AI Workspace API',
+    endpoints: {
+      auth: '/api/auth',
+      projects: '/api/projects',
+      ai: '/api/ai',
+      analytics: '/api/analytics',
+      health: '/api/health'
+    }
+  });
 });
-
 
 // API health check
 app.get('/api/health', (req, res) => {
