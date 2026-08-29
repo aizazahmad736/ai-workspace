@@ -12,6 +12,19 @@
       "plan": "Free",
       "aiUsageLimit": 20,
       "aiUsageCount": 0
+    },
+    {
+      "id": "y6po5gq",
+      "_id": "z85jbsv",
+      "createdAt": "2026-08-29T21:53:34.601Z",
+      "updatedAt": "2026-08-29T21:53:34.601Z",
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "$2a$10$Gt4qBajD4.Ea9loGg91Oiu31MomJ8nbwFehc6c9Chiv61HXTQWpou",
+      "role": "Admin",
+      "plan": "Free",
+      "aiUsageLimit": 20,
+      "aiUsageCount": 0
     }
   ],
   "projects": [],
@@ -26,6 +39,26 @@
       "userName": "Aizaz Ahmad",
       "action": "Account Created",
       "details": "Registered a new account on AI Workspace"
+    },
+    {
+      "id": "jkxyqk3",
+      "_id": "7tovesm",
+      "createdAt": "2026-08-29T21:53:34.602Z",
+      "updatedAt": "2026-08-29T21:53:34.602Z",
+      "userId": "y6po5gq",
+      "userName": "Test User",
+      "action": "Account Created",
+      "details": "Registered a new account on AI Workspace"
+    },
+    {
+      "id": "j674d90",
+      "_id": "ey7ko7m",
+      "createdAt": "2026-08-29T21:54:16.059Z",
+      "updatedAt": "2026-08-29T21:54:16.060Z",
+      "userId": "y6po5gq",
+      "userName": "Test User",
+      "action": "User Login",
+      "details": "Successfully logged in to the dashboard"
     }
   ]
 }
