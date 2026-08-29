@@ -80,3 +80,24 @@ Ensure you have **Node.js** (v18+) installed.
    npm run dev
    ```
 4. Click the link shown in the output terminal (usually http://localhost:5173) to open the application in your browser.
+
+
+## Project Status
+
+The AI Workspace is an actively developed full-stack SaaS dashboard project focused on combining modern web development with AI-powered productivity tools.
+
+### Tech Stack
+
+* **Frontend:** React, Vite, JavaScript, Recharts
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB / JSON fallback database
+* **Authentication:** JWT, bcrypt
+* **AI Features:** AI-powered resume review, interview simulation, code explanation, summarization, and email generation
+* **Deployment:** GitHub Pages for the frontend
+
+### Development Goals
+
+* Build and demonstrate full-stack development skills
+* Integrate AI-powered features into a SaaS-style application
+* Practice authentication, APIs, database integration, analytics, and responsive UI development
+* Continue improving the project with additional AI and productivity features
